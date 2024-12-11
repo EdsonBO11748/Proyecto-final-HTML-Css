@@ -1,0 +1,358 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Encabezado */
+header {
+    background-color: #f0c52b;
+    padding: 0px 0px 0px 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    text-decoration: none;
+}
+.nav1{
+    background-color: #f0c52b;
+    min-height: 42.5px;
+    display: flex;
+    justify-content: space-between;    
+}
+header .barra1 img{
+    width: 26.52px;
+    height: 26.52px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: flex;
+
+}
+.barra1{
+    margin-left: 140px;
+    display: flex;
+}
+.barra1_1{
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    justify-content: space-between;
+    margin-inline-end: -590px;
+    text-decoration: none;
+}
+.barra1_1 img{
+    width: 13.6px;
+    height: 13.6px;
+    text-decoration: none;
+}
+#telf{
+    margin-right: 20px;
+}
+.uber img{
+    width: 35px;
+    height: 35px;
+    margin-inline-start: 50px;
+    margin-inline-end: 120px;
+    margin-top: 5%;
+}
+
+.nav2{
+    background-color: #4d4d4d;
+    height: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav2 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nombre{
+    color: white;
+}
+
+.lista{
+    margin: 0px 15px;
+    font-weight: 900;
+    color: #c0c0c0;
+    font-size: 16px;
+}
+.lista:hover{
+    color: white;
+    cursor: pointer;
+}
+
+header .nav2 img {
+    height: 82px;
+    width: 81px;
+    margin-left: -20px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    background-image: url(fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: visible;
+    text-align: center;
+    padding: 150px 20px 30px 0px;
+    color: white;
+
+}
+.banner img{
+    height: 525px;
+    width: 725px;
+    position: relative;
+    top: 70px;
+    left: 110px;
+    }
+.banner h1{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6.50rem;
+    margin: 0px 31px;
+    line-height: 1.1;
+    text-align: left;
+    z-index:1;
+    position: relative;
+    margin-top: 90px;
+}
+
+.banner h3{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin: 39px 117px 0px 30px;
+    line-height: 1.1;
+    width: 457px;
+}
+.banner p{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 446px;
+    line-height: 1.1;
+    text-align: left;
+    margin: 16px 128px 0px 30px;
+}
+
+/*menu*/
+.menu {
+    display: flex;
+    background-image: url(fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: visible;
+    text-align: center;
+    padding: 150px 20px 30px 0px;
+    color: white;
+    justify-content: space-around;
+
+}
+.menu .menu-content{
+   margin-left: 200px; 
+   margin-top: 100px;
+}
+
+.menu .menu-content h2{
+    
+    font-family: "Lobster", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3.8rem;
+    margin: 0px 31px;
+    text-align: left;
+    z-index:1;
+    position: relative;
+    width: fit-content;
+    line-height: 1.1;
+    max-width: 497px;
+    margin: 31px 0px 0px 0px;
+}
+.menu .menu-content p{
+    width: fit-content;
+    height: 108px;  
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.1;
+    text-align: left;
+    z-index:1;
+    margin: 24px 42px 50px 0px;
+    max-width: 455px;
+}
+
+.menu img{
+    max-height: 677px;
+    width: 704px;
+    position: relative;
+    object-fit: contain;
+    background-size: contain;
+    margin-right: 50px;
+    }
+
+.menu .menu-content a{
+    text-decoration: none;
+    color: black;
+    background-color: #f0c52b;
+    border-radius: 50px;
+    padding: 10px 60px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+/*Características*/
+
+.caracteristicas{
+    display: flex;
+    background-image: url(fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: visible;
+    text-align: left;
+    padding: 50px 20px 30px 0px;
+    color: white;
+    justify-content: space-around;
+}
+.caract{
+    margin-right: 110px;
+    padding: 30px 30px;
+}
+.caract h3{
+    width: 557px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3rem;
+    line-height: 1.1;
+    
+}
+.caract p{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 20px 0px 0px 13px;
+    max-width: 557px;
+    line-height: 1.6;
+}
+.caract img{
+    height: 36px;
+}
+.caracteristicas #plato{
+    width: 702px;
+    height: 596px;
+}
+/*Promos*/
+.promos{
+    background-image: linear-gradient(red,yellow);
+}
+
+
+
+/* Menú */
+.menu {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-items .item {
+    text-align: center;
+}
+
+.menu-items .item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Nosotros */
+.nosotros {
+    padding: 50px 20px;
+    background-color: #eee;
+    text-align: center;
+}
+
+/* Contacto */
+.contacto {
+    padding: 50px 20px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contacto label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contacto input, .contacto textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto button {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
