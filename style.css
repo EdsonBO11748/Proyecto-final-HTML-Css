@@ -114,6 +114,10 @@ header .nav2 img {
     margin-left: -20px;
 }
 
+.nav2 #mebt {
+    display: none
+}
+
 /* Banner */
 .banner {
     display: flex;
@@ -182,6 +186,7 @@ header .nav2 img {
     padding: 150px 20px 30px 0px;
     color: white;
     justify-content: space-around;
+    width: auto;
 
 }
 .menu .menu-content{
@@ -256,6 +261,7 @@ header .nav2 img {
     padding: 50px 20px 30px 0px;
     color: white;
     justify-content: space-around;
+    width: auto;
 }
 .caract{
     margin-right: 110px;
@@ -589,7 +595,7 @@ footer .ubic{
     }
 }
 /*Cambio de tamaño 1024px*/
-@media screen and (max-width:1024px){
+@media screen and (max-width:1445px){
     .barra1{
         margin-left: 90px;
         display: flex;
@@ -799,7 +805,7 @@ footer .ubic{
 }
 /*Cambio de tamaño para 768px*/
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
     header nav {
         padding: 0 20px;
     }
@@ -1062,7 +1068,7 @@ footer .ubic{
 }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width: 767px){
     header nav {
         padding: 0 20px;
     }
@@ -1070,27 +1076,30 @@ footer .ubic{
         min-height: 60px;  
     }
     header .barra1 img{
-        width: 26.52px;
-        height: 26.52px;
+        width: 20.52px;
+        height: 20.52px;
         margin-right: 10px;
     }
     .barra1{
-        margin-left: 90px;
+        margin-left: 10px;
     }
     .barra1_1{
-        margin-inline-end: -120px; 
+        margin-inline-end: -50px; 
+        font-size: 12px;
+        flex-direction: column;
     }
     .barra1_1 img{
-        width: 19.6px;
-        height: 19.6px;
+        width: 10.6px;
+        height: 10.6px;
     }
     #telf{
         margin-right: 20px;
+
     }
     .uber img{
-        width: 35px;
-        height: 35px;
-        margin-right: 50px;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
         margin-left: 5px;
         margin-top: 5%;
     }
@@ -1109,6 +1118,30 @@ footer .ubic{
         height: 62px;
         width: 61px;
         margin-left: 20px;
+    }
+
+    .nav2 ul{
+        display: none;
+    }
+
+    .nav2 #mebt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        width: 20px;
+        height: 22px;
+    }
+    .nav2 #mebt img{
+        width: 20px;
+        height: 22px;
+        background-color:#4d4d4d;
+        margin: 0px;
+    }
+    .nav2 #mebt:hover ul{
+        display: block;
+        background-color:#4d4d4d;
+        position: relative;
     }
 
 
@@ -1151,9 +1184,11 @@ footer .ubic{
 /*Menú*/
 .menu {
     padding: 0px 0px 30px 0px;
+    width: auto;
+    flex-direction: column;
 }
 .menu .menu-content{
-   margin-left: 80px; 
+   margin-left: 40px; 
    margin-top: 50px;
 }
 
@@ -1173,9 +1208,7 @@ footer .ubic{
 .menu img{
     max-height: 277px;
     width: 304px;
-    position: relative;
-    top: 50px;
-    left: -485px;
+    margin: 0px 0px;
     }
 
 .menu .menu-content a{
@@ -1186,12 +1219,15 @@ footer .ubic{
 /*Características*/
 .caracteristicas{
     padding: 40px 15px 20px 0px;
+    flex-direction: column;
 }
 .caract{
     margin-right: 0px;
     padding: 30px 25px;
     position: relative;
-    left: -420px;
+    top: -370px;
+    left: 0px;
+    height: 300px;
 }
 .caract h3{
     width: 270px;
@@ -1206,7 +1242,8 @@ footer .ubic{
     height: 20px;
 }
 .caracteristicas #plato{
-   visibility: hidden;
+ margin-left: -500px;
+ visibility: hidden;
 }
 /*Promos*/
 .promos{
@@ -1240,21 +1277,21 @@ footer .ubic{
     height: 39.73px;
 }
 .conectate2{
-    width: 420px;
-    margin-left: 110px;
+    width: 300px;
+    margin-left: 10px;
     margin-top: 15px;
 }
 .conectate2 h2{
-    width: 420px;
-    font-size: 2.5rem;
+    width: 300px;
+    font-size: 2rem;
 }
 .conectate2 p{
     margin-top: 15px;
     font-size: 14px;
-    width: 420px;
+    width: 300px;
 }
 .conectate3{
-    margin-left: 150px;
+    margin-left: 100px;
     margin-top: 15px;
 }
 
@@ -1262,9 +1299,9 @@ footer .ubic{
     width: 180px;
     gap: 35px;
     margin-top: 45px;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 100px;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-left: 50px;
 }
 .alimentos p{
     display: flex;
@@ -1278,52 +1315,59 @@ footer .ubic{
     margin-left: 20px;
 }
 .conectate .menubt{
-    padding: 9px 84px 11px 83px;
+    padding: 9px 75px 11px 75px;
     font-size: 28px;
-    margin: 22px 150px;
+    margin: 20px 10px;
     width: 280px;
 }
 /*Instalaciones*/
 .instalaciones a{
     padding: 40px 0px;
-    margin: 40px 150px;
+    margin: 40px 0px;
     border-radius: 70px;
     font-size: 16px;
 }
 /*Restaurante*/
+.restaurante div{
+    padding: 15px;
+    margin-left: 10px;
+}
 .restaurante h2{
-        width: 320px;
+        width: 270px;
         height: 66px;
-        font-size: 30px;
+        font-size: 22px;
         margin-top: 20px;
     }
 .restaurante p{
-        width: 420px;
+        width: 270px;
         height: 307px;
-        font-size: 16px;
+        font-size: 14px;
     }
 /*ubicacion*/
-.ubicacion .ubdesc{
-    width: 370px;
-    height: 370px;
-    padding: 20px;
-    margin-left: 70px;
+.ubicacion{
+    flex-direction: column;
 }
+.ubicacion .ubdesc{
+    width: 320px;
+    height: 400px;
+    padding: 10px;
+    margin-left: 0px;
+ }
 .ubicacion h2{
-    width: 340px;
+    width: 240px;
     height: 60px;
-    font-size: 2.8rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 .ubicacion h3{
-    width: 300px;
+    width: 270px;
     height: 70px;
-    font-size: 18px;
-    margin: 10px 6px 0px 35px;
+    font-size: 16px;
+    margin: 10px 6px 0px 20px;
     line-height: 1.1;
 }
 .ubicacion ul{
-    width: 250px;
+    width: 200px;
     height: 160px;
     font-size: 14px;
     margin: 9px 6px 0px 35px;
@@ -1334,13 +1378,39 @@ footer .ubic{
     color:white;
     width: 150.29px;
     height: 33.83px;
-    margin: 30px 6px 0px 50px;
     font-size: 15px;
+    position: relative;
+    top: 40px;
 }
 
 .ubicacion iframe{
-    margin-top: 80px;
+    margin: 10px 0px 10px 10px;
     width: 300px;
     height: 250px;
 }
+/* Pie de página */
+footer {
+    padding: 10px;
+}
+footer .link{
+    font-size: 16px;
+    font-weight: 400;   
+}
+footer .link img{
+    width: 21.43px;
+    height: 21.43px;
+}
+footer .aviso{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+footer .ubic{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px 15px;
+    width: 350px;
+    height: 190.8px;
+}
+
 }
