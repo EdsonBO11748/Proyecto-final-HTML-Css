@@ -1,0 +1,36 @@
+@media screen and(max-width:1024px){
+    .barra1{
+        margin-left: 90px;
+        display: flex;
+    }
+    .barra1_1{
+        margin-inline-end: -290px; 
+    }
+
+    /* Banner */
+.banner {
+    padding: 150px 15px 30px 0px;
+    color: white;
+
+}
+.banner img{
+    height: 325px;
+    width: 525px;
+    position: relative;
+    top: 70px;
+    left: 110px;
+    }
+.banner h1{
+    margin: 0px 31px;
+    margin-top: 70px;
+}
+
+.banner h3{
+    margin: 39px 90px 0px 25px;
+    width: 400px;
+}
+.banner p{
+    max-width: 346px;
+    margin: 16px 100px 0px 25px;
+}
+}
